@@ -199,6 +199,7 @@ export const renderItem: ItemRenderer<RunnableVersion> = (
       >
         <MenuItem
           active={modifiers.active}
+          data-testid="disabled-menu-item"
           disabled={true}
           text={highlightText(item.version, query)}
           key={item.version}
